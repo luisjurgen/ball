@@ -45,7 +45,7 @@ class Ball{
         this.context=context;
         this.maxWidth=maxWidth;
         this.maxHeight=maxHeight;
-        this.radio=100;
+        this.radio=75;
         this.posX=posX;
         this.posY=posY;
         this.speedX=5;
@@ -69,7 +69,7 @@ class Ball{
 
         this.context.beginPath();
         this.context.fillStyle='black';
-        this.context.font = '200px Plank';
+        this.context.font = '150px Plank';
         this.context.textAlign= 'center';
         this.context.textBaseline='middle';
         this.context.fillText(this.valorTexto,this.posX, this.posY);
