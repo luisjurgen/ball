@@ -100,3 +100,9 @@ class Ball{
     }  
 }
 
+let mensaje = document.querySelector('.mensaje');
+mensaje.style.height=`${window.innerHeight}px`;
+
+window.addEventListener('click',()=>{
+    mensaje.remove();
+});

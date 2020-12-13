@@ -6,6 +6,24 @@
     font-display: swap;
 }
 
+html{
+    background: black;
+   
+}
+
+.mensaje{
+    color:rgb(80, 80, 80);
+    position: absolute;
+    width:100%;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-size: 3rem;
+
+
+}
+
+
 .esfera{
     position: absolute;
     width: 4rem;
@@ -22,40 +40,10 @@
 .canvas{
     background: black;
 }
-.abuelo{
-    font-size:2rem;    
-    position: absolute;
-    animation-play-state: running;
-    --offset: 20vw;
-    --move-initial: calc(-50% + var(--offset));
-     --move-final: calc(-25% + var(--offset)); 
-}
-@keyframes marquee{
-    0%{
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-    100%{
-        transform: translate3d(var(--move-final), 0, 0);
-    }
-}
-.padre{
-   width:fit-content;
-    display: flex;
-    position: absolute;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 20s linear infinite;
-    animation-play-state: running; 
-    border-bottom: 1px solid white;
-}
-
-.hijo{
-    display:flex;
-    align-items: center;
-}
-
 
 span{
     padding:0.5rem 1rem;
     color:white;
+    
     
 }
